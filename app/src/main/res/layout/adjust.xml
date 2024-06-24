@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10sp"
+    android:background="@drawable/sheet_background"
+    >
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="20sp"
+        android:text="Add Friend"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/card1"
+        app:layout_constraintTop_toBottomOf="@id/txt"
+        android:text="User Id:"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/colornew1"
+        android:layout_marginTop="20sp"
+        />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card1"
+        android:layout_width="0dp"
+        android:layout_height="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt3"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginTop="10sp"
+        app:cardCornerRadius="10sp"
+        app:strokeWidth="0dp"
+        app:strokeColor="@color/color1"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ebefff">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ebefff"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                >
+                <EditText
+                    android:id="@+id/id_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ebefff"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/confirm_button"
+        android:layout_width="0dp"
+        android:layout_height="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card1"
+        android:layout_marginTop="20sp"
+        app:layout_constraintWidth_percent="0.5"
+        android:backgroundTint="@color/purple"
+        android:text="Confirm"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        app:cornerRadius="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20sp"
+        />
+
+    <ProgressBar
+        android:id="@+id/bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+

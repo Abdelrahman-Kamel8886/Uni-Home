@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.RoadMap.RoadmapBaseFragment">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="30sp"/>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="RoadMap"
+        android:textStyle="bold"
+        android:textColor="#3E3E3E"
+        android:textSize="16sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="40sp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="-56dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="20sp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/basic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10sp"
+                android:layout_marginTop="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/basic"
+
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/basic1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/basic">
+
+                <TextView
+                    android:id="@+id/cs50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:paddingStart="30sp"
+                    android:text="● CS50's Introduction to Computer Science"
+                    android:textColor="#0000FF"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:paddingStart="65sp"
+                    android:text="What you'll learn"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cs50" />
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:paddingStart="65sp"
+                    android:paddingEnd="30sp"
+                    android:text="● A broad and robust understanding of computer science and programming\n● How to think algorithmically and solve programming problems efficiently\n● Concepts like abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development\n● Familiarity in a number of languages, including C, Python, SQL, and JavaScript plus CSS and HTML\n● How to engage with a vibrant community of like-minded learners from all levels of experience\n● How to develop and present a final programming project to your peers"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt1" />
+
+                <TextView
+                    android:id="@+id/python"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="20sp"
+                    android:paddingStart="30sp"
+                    android:text="● Python for Everybody (PY4E)"
+                    android:textColor="#0000FF"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/core"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10sp"
+                android:layout_marginTop="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/core"
+                app:layout_constraintTop_toBottomOf="@id/basic1" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/core1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/core"
+                android:paddingBottom="20sp">
+
+                <TextView
+                    android:id="@+id/core_prog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:paddingStart="30sp"
+                    android:text="● Core programming:-"
+                    android:textColor="@color/background2"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/core_prog_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="start"
+                    android:paddingStart="65sp"
+                    android:paddingEnd="30sp"
+                    android:text="Topics covered: functional programming, design for
+  testing, program requirements, common design patterns,
+  unit testing, object-oriented design, static typing,
+  dynamic typing, ML-family languages (via Standard ML),
+  Lisp-family languages (via Racket), Ruby and more."
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/core_prog" />
+
+                <LinearLayout
+                    android:id="@+id/core_prog_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10sp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:paddingStart="65sp"
+                    app:layout_constraintStart_toStartOf="@id/core_prog_txt"
+                    app:layout_constraintTop_toBottomOf="@id/core_prog_txt">
+
+                    <TextView
+                        android:id="@+id/core_prog1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● How to Code - Simple Data - Complex Data"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/core_prog2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Programming Languages - C++"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/core_prog3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Object-Oriented Programming With C++"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/core_prog4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Design Patterns"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/core_prog5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Software Architecture"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/core_math"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:paddingStart="30sp"
+                    android:text="● Core Math:-"
+                    android:textColor="@color/background2"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/core_prog_layout" />
+
+
+                <TextView
+                    android:id="@+id/core_math_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="start"
+                    android:paddingStart="65sp"
+                    android:paddingEnd="30sp"
+                    android:text="Discrete math (Math for CS) is a prerequisite and closely related to the study of algorithms and data structures. Calculus both prepares    students for discrete math and helps students develop mathematical maturity."
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/core_math" />
+
+                <LinearLayout
+                    android:id="@+id/core_math_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10sp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:paddingStart="65sp"
+                    app:layout_constraintStart_toStartOf="@id/core_math_txt"
+                    app:layout_constraintTop_toBottomOf="@id/core_math_txt">
+
+                    <TextView
+                        android:id="@+id/core_math1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Calculus 1A: Differentiation (alt)"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/core_math2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Calculus 1B: Integration"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/core_math3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Mathematics for Computer Science"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/core_tools"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:paddingStart="30sp"
+                    android:text="● Core Tools:-"
+                    android:textColor="@color/background2"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/core_math_layout" />
+
+
+                <TextView
+                    android:id="@+id/core_tools_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="start"
+                    android:paddingStart="65sp"
+                    android:paddingEnd="30sp"
+                    android:text="Understanding theory is important, but you will also be expected to create programs. There are a number of tools that are widely used to   make that process easier. Learn them now to ease your future work writing programs.
+  Topics covered: terminals and shell scripting, vim, command line environments, version control and more"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/core_tools" />
+
+                <LinearLayout
+                    android:id="@+id/core_tools_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10sp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:paddingStart="65sp"
+                    app:layout_constraintStart_toStartOf="@id/core_tools_txt"
+                    app:layout_constraintTop_toBottomOf="@id/core_tools_txt">
+
+                    <TextView
+                        android:id="@+id/core_tools1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Git And Github"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/core_sys"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:paddingStart="30sp"
+                    android:text="● Core System:-"
+                    android:textColor="@color/background2"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/core_tools_layout"/>
+
+
+                <TextView
+                    android:id="@+id/core_sys_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="start"
+                    android:paddingStart="65sp"
+                    android:paddingEnd="30sp"
+                    android:text="Topics covered: procedural programming manual memory management boolean algebra gate logic memory computer architecture assembly machine   language virtual machines high-level languages compilers operating systems network protocols and more"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/core_sys" />
+
+                <LinearLayout
+                    android:id="@+id/core_sys_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10sp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:paddingStart="65sp"
+                    app:layout_constraintStart_toStartOf="@id/core_sys_txt"
+                    app:layout_constraintTop_toBottomOf="@id/core_sys_txt">
+
+                    <TextView
+                        android:id="@+id/core_sys1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Build a Modern Computer from First Principles: From Nand to Tetris (alt)"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/core_sys2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Build a Modern Computer from First Principles: Nand to Tetris Part II"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/core_sys3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Operating Systems: Three Easy Pieces"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/core_sys4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Computer Networking: a Top-Down Approach"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/core_theory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:paddingStart="30sp"
+                    android:text="● Core Theory:-"
+                    android:textColor="@color/background2"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/core_sys_layout"/>
+
+
+                <TextView
+                    android:id="@+id/core_theory_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="start"
+                    android:paddingStart="65sp"
+                    android:paddingEnd="30sp"
+                    android:text="Topics covered: divide and conquer sorting and searching randomized algorithms graph search shortest paths data structures greedy     algorithms minimum spanning trees dynamic programming NP-completeness and more"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/core_theory" />
+
+                <LinearLayout
+                    android:id="@+id/core_theory_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10sp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:paddingStart="65sp"
+                    app:layout_constraintStart_toStartOf="@id/core_theory_txt"
+                    app:layout_constraintTop_toBottomOf="@id/core_theory_txt">
+
+                    <TextView
+                        android:id="@+id/core_theory1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Divide and Conquer, Sorting and Searching, and Randomized Algorithms"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/core_theory2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Graph Search, Shortest Paths, and Data Structures"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/core_theory3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/core_theory4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Shortest Paths Revisited, NP-Complete Problems and What To Do About Them"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/core_sec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:paddingStart="30sp"
+                    android:text="● Core Security:-"
+                    android:textColor="@color/background2"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/core_theory_layout"/>
+
+
+                <TextView
+                    android:id="@+id/core_sec_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="start"
+                    android:paddingStart="65sp"
+                    android:paddingEnd="30sp"
+                    android:text="Topics covered: Topics covered Confidentiality, Integrity, Availability Secure Design Defensive Programming Threats and Attacks Network   Security Cryptography and more"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/core_sec" />
+
+                <LinearLayout
+                    android:id="@+id/core_sec_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10sp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:paddingStart="65sp"
+                    app:layout_constraintStart_toStartOf="@id/core_sec_txt"
+                    app:layout_constraintTop_toBottomOf="@id/core_sec_txt">
+
+                    <TextView
+                        android:id="@+id/core_sec1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Cybersecurity Fundamentals"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/core_sec2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Principles of Secure Coding"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/core_sec3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Identifying Security Vulnerabilities"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/core_sec4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Identifying Security Vulnerabilities in C/C++Programming"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/core_app"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:paddingStart="30sp"
+                    android:text="● Core Application:-"
+                    android:textColor="@color/background2"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/core_sec_layout"/>
+
+
+                <TextView
+                    android:id="@+id/core_app_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="start"
+                    android:paddingStart="65sp"
+                    android:paddingEnd="30sp"
+                    android:text="Topics covered: Agile methodology REST software specifications refactoring relational databases transaction processing data modeling   neural networks supervised learning unsupervised learning OpenGL ray tracing and more"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/core_app" />
+
+                <LinearLayout
+                    android:id="@+id/core_app_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10sp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:paddingStart="65sp"
+                    app:layout_constraintStart_toStartOf="@id/core_app_txt"
+                    app:layout_constraintTop_toBottomOf="@id/core_app_txt">
+
+                    <TextView
+                        android:id="@+id/core_app1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Databases: Modeling and Theory"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/core_app2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Databases: Relational Databases and SQL"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/core_app3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Databases: Semistructured Data"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/core_app4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Machine Learning"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/core_app5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Computer Graphics"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/core_app6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Software Engineering: Introduction"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/core_eth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:paddingStart="30sp"
+                    android:text="● Core Ethics:-"
+                    android:textColor="@color/background2"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/core_app_layout"/>
+
+
+                <TextView
+                    android:id="@+id/core_eth_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="start"
+                    android:paddingStart="65sp"
+                    android:paddingEnd="30sp"
+                    android:text="Topics covered: Social Context Analytical Tools Professional Ethics Intellectual Property Privacy and Civil Liberties and more"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/core_eth" />
+
+                <LinearLayout
+                    android:id="@+id/core_eth_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10sp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:paddingStart="65sp"
+                    app:layout_constraintStart_toStartOf="@id/core_eth_txt"
+                    app:layout_constraintTop_toBottomOf="@id/core_eth_txt">
+
+                    <TextView
+                        android:id="@+id/core_eth1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Ethics, Technology and Engineering"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/core_eth2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Introduction to Intellectual Property"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/core_eth3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="2sp"
+                        android:text="● Data Privacy Fundamentals"
+                        android:textColor="#0000FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/advanced"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10sp"
+                android:layout_marginTop="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/advanced"
+                app:layout_constraintTop_toBottomOf="@id/core1" />
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/advanced1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/advanced"
+            android:paddingBottom="20sp">
+
+            <TextView
+                android:id="@+id/adv_prog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:paddingStart="30sp"
+                android:text="● Advanced programming:-"
+                android:textColor="@color/background2"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/adv_prog_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:gravity="start"
+                android:paddingStart="65sp"
+                android:paddingEnd="30sp"
+                android:text="Topics covered: debugging theory and practice goal-oriented programming parallel computing object-oriented analysis and design UML large-scale software architecture and design and more"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/adv_prog" />
+
+            <LinearLayout
+                android:id="@+id/adv_prog_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10sp"
+                android:orientation="vertical"
+                android:paddingStart="65sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@id/adv_prog_txt"
+                app:layout_constraintTop_toBottomOf="@id/adv_prog_txt">
+
+                <TextView
+                    android:id="@+id/adv_prog1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="2sp"
+                    android:text="● Parallel Programming"
+                    android:textColor="#0000FF"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/adv_prog2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="2sp"
+                    android:text="● Introduction to Haskell"
+                    android:textColor="#0000FF"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/adv_prog3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="2sp"
+                    android:text="● Software Debugging"
+                    android:textColor="#0000FF"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/adv_prog4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="2sp"
+                    android:text="● Software Testing"
+                    android:textColor="#0000FF"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/adv_sys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:paddingStart="30sp"
+                android:text="● Advanced systems:-"
+                android:textColor="@color/background2"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/adv_prog_layout" />
+
+
+            <TextView
+                android:id="@+id/adv_sys_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:gravity="start"
+                android:paddingStart="65sp"
+                android:paddingEnd="30sp"
+                android:text="Topics covered: digital signaling combinational logic CMOS technologies sequential logic finite state machines processor instruction sets caches pipelining virtualization parallel processing virtual memory synchronization primitives system call interface and more"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/adv_sys" />
+
+            <LinearLayout
+                android:id="@+id/adv_sys_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10sp"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:paddingStart="65sp"
+                app:layout_constraintStart_toStartOf="@id/adv_sys_txt"
+                app:layout_constraintTop_toBottomOf="@id/adv_sys_txt">
+
+                <TextView
+                    android:id="@+id/adv_sys1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="2sp"
+                    android:text="● Computation Structures 1: Digital Circuits"
+                    android:textColor="#0000FF"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/adv_sys2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="2sp"
+                    android:text="● Computation Structures 2: Computer Architectur"
+                    android:textColor="#0000FF"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/adv_sys3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="2sp"
+                    android:text="● Computation Structures 3: Computer Organization"
+                    android:textColor="#0000FF"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/adv_math"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:paddingStart="30sp"
+                android:text="● Advanced math:-"
+                android:textColor="@color/background2"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/adv_sys_layout" />
+
+
+]
+
+            <LinearLayout
+                android:id="@+id/adv_math_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10sp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingStart="65sp"
+                app:layout_constraintStart_toStartOf="@id/adv_math"
+                app:layout_constraintTop_toBottomOf="@id/adv_math">
+
+                <TextView
+                    android:id="@+id/adv_math1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="2sp"
+                    android:text="● Essence of Linear Algebra"
+                    android:textColor="#0000FF"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/adv_math2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="2sp"
+                    android:text="● Linear Algebra"
+                    android:textColor="#0000FF"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/adv_math3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="2sp"
+                    android:text="● Introduction to Numerical Methods"
+                    android:textColor="#0000FF"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/adv_math4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="2sp"
+                    android:text="● Introduction to Logic"
+                    android:textColor="#0000FF"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/adv_math5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="2sp"
+                    android:text="● Probability"
+                    android:textColor="#0000FF"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.profile.ProfileFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20sp"
+        android:id="@+id/txt"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/setting"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20sp"
+        android:id="@+id/settings"/>
+
+
+
+
+
+    <RelativeLayout
+                android:id="@id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt"
+                android:layout_marginTop="100sp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerInParent="true"
+            app:civ_border_color="#E9F0FE"
+            app:civ_border_width="5dp" />
+
+            </RelativeLayout>
+
+
+
+
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card1"
+                android:layout_marginTop="10sp"
+                android:text="UserName"
+                android:textSize="16sp"
+                android:textColor="#646568"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/username"
+                android:layout_marginTop="5sp"
+                android:textColor="#646464"
+                android:textStyle="bold"
+                android:text="username@gmail.com"
+                android:textSize="10sp"
+
+                />
+
+
+    <ImageView
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        app:layout_constraintStart_toStartOf="@id/mail"
+        app:layout_constraintTop_toBottomOf="@id/mail"
+        android:src="@drawable/ic_baseline_date_range_24"
+        android:layout_marginTop="20sp"
+        android:id="@+id/date"
+        />
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/date"
+        app:layout_constraintBottom_toBottomOf="@id/date"
+        app:layout_constraintTop_toTopOf="@id/date"
+        android:layout_marginStart="10sp"
+        android:textColor="#646464"
+        android:textStyle="bold"
+        android:text="1-5-2000"
+        android:textSize="12sp"
+
+        />
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/date"
+                app:layout_constraintTop_toBottomOf="@id/date"
+                android:src="@drawable/git"
+                android:visibility="gone"
+                android:layout_marginTop="20sp"
+                android:id="@+id/git"
+                />
+    <TextView
+        android:id="@+id/git_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/git"
+        app:layout_constraintBottom_toBottomOf="@id/git"
+        app:layout_constraintTop_toTopOf="@id/git"
+        android:layout_marginStart="10sp"
+        android:textColor="#646464"
+        android:textStyle="bold"
+        android:text="username"
+        android:visibility="gone"
+        android:textSize="12sp"
+
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/git"
+        app:layout_constraintTop_toBottomOf="@id/git"
+        android:src="@drawable/call"
+        android:layout_marginTop="20sp"
+        android:id="@+id/phone"
+        />
+    <TextView
+        android:id="@+id/phone_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/phone"
+        app:layout_constraintBottom_toBottomOf="@id/phone"
+        app:layout_constraintTop_toTopOf="@id/phone"
+        android:layout_marginStart="10sp"
+        android:textColor="#646464"
+        android:textStyle="bold"
+        android:text="01000055050"
+        android:textSize="12sp"
+
+        />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50sp"
+        >
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="35sp"
+            android:backgroundTint="#225CF2"
+            android:text="My Posts"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cornerRadius="8sp"
+            android:id="@+id/post_btn"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/friend_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="35sp"
+            android:backgroundTint="#225CF2"
+            android:text="My Friends"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/post_btn"
+            android:layout_marginStart="15sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cornerRadius="8sp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/logout_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout"
+                android:outlineSpotShadowColor="@color/white"
+                android:outlineAmbientShadowColor="@color/white"
+                android:backgroundTint="@color/white"
+                android:textSize="12sp"
+                android:drawableEnd="@drawable/out"
+                android:layout_marginTop="30sp"
+                android:textStyle="bold"
+                android:textColor="#225CF2"
+                />
+
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logout_btn"
+        android:layout_marginTop="30sp"
+        android:layout_marginStart="50sp"
+        android:textStyle="bold"
+        android:textColor="#555555"
+        android:text="Help and support"
+        android:textSize="10sp"
+
+        />
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/txt2"
+        app:layout_constraintTop_toBottomOf="@id/txt2"
+        android:layout_marginTop="10sp"
+        android:textStyle="bold"
+        android:textColor="#225CF2"
+        android:text="Contact Us"
+        android:textSize="12sp"
+
+        />
+    <TextView
+        android:id="@+id/terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/txt2"
+        app:layout_constraintTop_toBottomOf="@id/contact"
+        android:layout_marginTop="10sp"
+        android:textStyle="bold"
+        android:textColor="#225CF2"
+        android:text="Terms of Use"
+        android:textSize="12sp"
+
+        />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

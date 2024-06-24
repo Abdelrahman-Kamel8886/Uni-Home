@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".ui.profile.Account.myprofile.MyProfileFragment">
+
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="20sp"
+        android:text="Edit Profile"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="26sp"/>
+
+
+    <RelativeLayout
+        android:id="@id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt"
+        android:layout_marginTop="50sp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/courses"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/color1" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/photo_edit"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        app:layout_constraintStart_toStartOf="@id/card1"
+        app:layout_constraintEnd_toEndOf="@id/card1"
+        app:layout_constraintTop_toBottomOf="@id/card1"
+        app:cardBackgroundColor="@color/background4"
+        android:layout_marginTop="-15sp"
+        app:cardCornerRadius="100sp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_edit_24"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card1"
+        android:layout_marginTop="40sp"
+        android:paddingVertical="2sp"
+        android:layout_marginHorizontal="20sp"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_baseline_account_box_24" />
+
+        <TextView
+            android:id="@+id/user_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            app:layout_constraintStart_toEndOf="@id/img1"
+            android:layout_marginStart="15sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/user_edit"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+
+            android:src="@drawable/ic_baseline_edit_24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user"
+        android:layout_marginTop="25sp"
+        android:paddingVertical="2sp"
+        android:layout_marginHorizontal="20sp"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_baseline_email_24" />
+
+        <TextView
+            android:id="@+id/mail_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mail@mail.com"
+            app:layout_constraintStart_toEndOf="@id/img2"
+            android:layout_marginStart="15sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/mail_edit"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+
+            android:src="@drawable/ic_baseline_edit_24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mail"
+        android:layout_marginTop="25sp"
+        android:paddingVertical="2sp"
+        android:layout_marginHorizontal="20sp"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_baseline_phone_24" />
+
+        <TextView
+            android:id="@+id/phone_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01286233470"
+            app:layout_constraintStart_toEndOf="@id/img3"
+            android:layout_marginStart="15sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/phone_edit"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+
+            android:src="@drawable/ic_baseline_edit_24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/birth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phone"
+        android:layout_marginTop="25sp"
+        android:paddingVertical="2sp"
+        android:layout_marginHorizontal="20sp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_baseline_date_range_24" />
+
+        <TextView
+            android:id="@+id/birth_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22-8-1998"
+            app:layout_constraintStart_toEndOf="@id/img4"
+            android:layout_marginStart="15sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/birth_edit"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+
+            android:src="@drawable/ic_baseline_edit_24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

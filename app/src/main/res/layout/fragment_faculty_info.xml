@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientinfo"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/zu"
+        android:paddingHorizontal="10sp"
+        android:alpha=".08"/>
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="30sp"/>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/back"
+        android:layout_marginStart="5sp"
+        app:layout_constraintBottom_toBottomOf="@id/back"
+        android:text="Info"
+        android:textStyle="bold"
+        android:textColor="#555555"
+        android:textSize="16sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fciinfo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:layout_marginEnd="15sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Faculty of Computer and Information"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/img"
+                android:gravity="start"
+                android:textColor="@color/white"
+                android:paddingStart="30sp"
+                android:paddingEnd="10sp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:id="@+id/txt1"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Zagazig University"
+                app:layout_constraintTop_toBottomOf="@id/txt1"
+                app:layout_constraintStart_toStartOf="@id/txt1"
+                android:gravity="start"
+                android:textColor="#CFA782"
+                android:paddingStart="30sp"
+                android:paddingEnd="10sp"
+                android:layout_marginTop="15sp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:id="@+id/txt2"
+                />
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Vision"
+                app:layout_constraintTop_toBottomOf="@id/txt2"
+                app:layout_constraintStart_toStartOf="@id/txt2"
+                android:gravity="start"
+                android:textColor="#666666"
+                android:paddingStart="30sp"
+                android:paddingEnd="10sp"
+                android:layout_marginTop="20sp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="The rapid and progressive development of the field of science and technology and the consequent development in universities and higher education systems in addition to the objectives of establishing the university are the foundations for establishing the future vision of the college during the coming period, which can be formulated as follows:
+
+                \n\nThe Faculty of Computers and Information at Zagazig University should be a leader in higher education, scientific research and community service in the fields of computing, informatics, decision support and artificial intelligence at the local, regional and international levels."
+                app:layout_constraintTop_toBottomOf="@id/txt3"
+                app:layout_constraintStart_toStartOf="@id/txt3"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:gravity="start"
+                android:textColor="#666666"
+                android:paddingHorizontal="30sp"
+                android:layout_marginTop="10sp"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Mission"
+                app:layout_constraintTop_toBottomOf="@id/txt4"
+                app:layout_constraintStart_toStartOf="@id/txt4"
+                android:gravity="start"
+                android:textColor="#666666"
+                android:paddingStart="30sp"
+                android:paddingEnd="10sp"
+                android:layout_marginTop="10sp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/txt6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txt5"
+                app:layout_constraintStart_toStartOf="@id/txt3"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:gravity="start"
+                android:text="The Faculty of Computers and Information at Zagazig University seeks to provide distinguished educational, research, and community services to graduate cadres with highly competitive capabilities in the fields of computing, informatics, artificial intelligence, decision support, meet the current and future labor market needs, as well as provide scientific research that contributes to community service."
+                android:textColor="#666666"
+                android:paddingHorizontal="30sp"
+                android:layout_marginTop="10sp"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/txt7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Goals"
+                app:layout_constraintTop_toBottomOf="@id/txt6"
+                app:layout_constraintStart_toStartOf="@id/txt2"
+                android:gravity="start"
+                android:textColor="#666666"
+                android:paddingStart="30sp"
+                android:paddingEnd="10sp"
+                android:layout_marginTop="10sp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/txt8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="The Faculty of Computers and Information at Zagazig University aims to:
+
+\n\n1- Preparing specialists in computer and information sciences, networks, multimedia, operations research and decision support, who are qualified with theoretical foundations and application methodologies to enable them to compete globally in the development of computer and information technologies.
+
+\n\n2- Conducting studies and scientific and applied research in the field of computers and information that have a direct impact on the integrated development of society.
+
+\n\n3- Providing scientific and technical advice and assistance to bodies and authorities that use computer and information technologies and are interested in decision-making and support.
+
+\n\n4- Rehabilitation of young graduates according to the needs of the labor market in the fields related to computers and information.
+
+\n\n5- Deepening technological awareness through the use of computer and information technologies in the state's sectors and institutions and raising the efficiency of their use.
+
+\n\n6- Participation with the specialized authorities in order to develop and localize the software of the systems and its various applications
+
+\n\n7- Organizing seminars and holding scientific conferences in the field of computer and information sciences with the aim of deepening concepts and raising the scientific level among specialized cadres.
+
+\n\n8- Concluding scientific agreements with corresponding bodies and institutions at the local, regional and global levels with the aim of exchanging experiences and conducting research related to computer science and information systems disciplines.
+
+\n\n9- Establishing specialized research units in the various branches of computer sciences, systems and information.
+
+\n\n10- Providing and strengthening the means of publishing and scientific research in various fields of specialization.
+
+"
+                app:layout_constraintTop_toBottomOf="@id/txt7"
+                app:layout_constraintStart_toStartOf="@id/txt3"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:gravity="start"
+                android:textColor="#666666"
+                android:paddingHorizontal="30sp"
+                android:layout_marginTop="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="40sp"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

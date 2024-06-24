@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingEnd="10sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="180sp"
+        android:layout_height="140sp"
+        app:cardCornerRadius="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        app:cardBackgroundColor="@color/white"
+        app:strokeColor="@color/background2"
+        app:strokeWidth="1sp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="140sp"
+                android:src="@drawable/courses"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/name_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginVertical="5sp"
+        android:paddingHorizontal="20sp"
+        app:layout_constraintTop_toBottomOf="@id/card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="book title dv d vsd sd s  sd sd sd  s sd s dd s ds s"
+        android:elevation="2dp"
+        android:textSize="10sp"
+        android:textColor="#555555"
+        android:textStyle="bold" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

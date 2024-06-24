@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.myHome.MyCourses.Courseviewer.VideoVewierFragment">
+
+
+
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/player2"
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/black"
+        app:videoId="-m3V8w_7vhk"
+        app:enableAutomaticInitialization="false"
+        app:autoPlay="true"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

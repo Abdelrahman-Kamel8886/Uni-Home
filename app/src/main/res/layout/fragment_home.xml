@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.baseHome.HomeFragment">
+
+    <FrameLayout
+        android:id="@+id/home_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/nav"
+        android:background="@color/white"
+        />
+
+    <ProgressBar
+        android:id="@+id/bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="300sp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10sp"
+        app:itemIconSize="30sp"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        app:menu="@menu/menu_nam" />
+
+
+
+</RelativeLayout>
