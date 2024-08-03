@@ -39,8 +39,8 @@ To get started with the Uni-Home application, follow these steps:
 2. An Android device or emulator for testing
 3. Required dependencies and SDKs
 ## Clone the Repository
-  ```bash
-  git clone https://github.com/Abdelrahman-Kamel8886/Uni-Home.git
+    ```bash
+    git clone https://github.com/Abdelrahman-Kamel8886/Uni-Home.git
 
 ## Setup and Configuration
 1. Open Android Studio and import the project.
