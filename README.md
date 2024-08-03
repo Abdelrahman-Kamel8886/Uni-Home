@@ -13,8 +13,8 @@ Uni-Home is a dynamic mobile application designed to enhance the university expe
   - The roadmap is a curated plan that includes recommended books, courses, and educational resources tailored to the user's academic level and interests.
   - Users can follow this roadmap to stay on track with their academic goals.
 - **Course and Book Requests:**
-  - Users can request additional books and courses that are not initially available.
-  - The app will review these requests and potentially add them to the available resources.
+     - Users can request additional books and courses that are not initially available.
+     - The app will review these requests and potentially add them to the available resources.
 - **Course Enrollment:** Enroll in and access content from free courses and books.
 - **YouTube Integration:** View course-related videos directly within the app using the YouTube API.
 - **Group Chat:** Participate in group chats specific to each grade year within the university.
@@ -38,9 +38,10 @@ To get started with the Uni-Home application, follow these steps:
 1. Android Studio (for Android development)
 2. An Android device or emulator for testing
 3. Required dependencies and SDKs
+   
 ## Clone the Repository
-    ```bash
     git clone https://github.com/Abdelrahman-Kamel8886/Uni-Home.git
+   
 
 ## Setup and Configuration
 1. Open Android Studio and import the project.
