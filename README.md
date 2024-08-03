@@ -1,12 +1,68 @@
-# UNI HOME
-Java android App 
+# Uni-Home
+![logo](https://github.com/user-attachments/assets/7887b40a-fdaa-4c9c-b1cf-77dffac3612b)
+### Overview
+Uni-Home is a dynamic mobile application designed to enhance the university experience for students. It offers a range of features that facilitate access to academic resources, foster communication, and provide personalized learning paths based on student preferences and academic standing.
 
-## Database
-Firebase-Database
+## Features
+- **Free Courses and Books:** Access a variety of free courses and books.
+- **University Integration:**
+  - During the initial signup, users provide their grade year and favorite tracks.
+  - Based on this information, the app customizes the content to match their faculty courses.
+  - The app then recommends relevant books and courses and assigns a personalized roadmap.
+- **Personalized Roadmap:**
+  - The roadmap is a curated plan that includes recommended books, courses, and educational resources tailored to the user's academic level and interests.
+  - Users can follow this roadmap to stay on track with their academic goals.
+- **Course and Book Requests:**
+  - Users can request additional books and courses that are not initially available.
+  - The app will review these requests and potentially add them to the available resources.
+- **Course Enrollment:** Enroll in and access content from free courses and books.
+- **YouTube Integration:** View course-related videos directly within the app using the YouTube API.
+- **Group Chat:** Participate in group chats specific to each grade year within the university.
+- **Community:** Read articles, add friends, chat with them, and view or post updates in the community feed.
 
-## Ui/Ux Designed By Mahmoud Sabry 
-### Figma Link : https://www.figma.com/design/bT1ZXQfCzC8n1eK4GL5hUa/uni-home
+## Technologies Used
+- **Programming Language:** Java
+- **Android Development:** Android SDK
+- **Database:** Firebase Realtime Database, Room Database
+- **Authentication:** Firebase Authentication
+- **Storage:** Firebase Storage
+- **Networking:** Retrofit
+- **YouTube API:** For viewing course videos
+- **Version Control:** Git , Github
+- **IDE:** Android Studio
 
+## Installation
+To get started with the Uni-Home application, follow these steps:
+
+## Prerequisites
+1. Android Studio (for Android development)
+2. An Android device or emulator for testing
+3. Required dependencies and SDKs
+## Clone the Repository
+   ```bash
+   git clone https://github.com/Abdelrahman-Kamel8886/Uni-Home.git
+
+## Setup and Configuration
+1. Open Android Studio and import the project.
+2. Sync the project with Gradle files.
+3. Configure the Firebase services by adding your google-services.json file to the app directory.
+4. Set up Firebase Authentication, Realtime Database, and Storage as described in the Firebase documentation.
+5. Set up YouTube API credentials and integrate them into the app to enable video viewing.
+6. Integrate Retrofit for network requests if needed.
+7. Ensure all necessary permissions and configurations are set in the AndroidManifest.xml.
+
+## Running the App
+1. Connect your Android device or start an emulator.
+2. Click on the "Run" button in Android Studio to build and deploy the app to your device.
+
+## Usage
+1. Launch the app on your device.
+2. Sign up by providing your grade year and favorite tracks to tailor your experience.
+3. Explore and enroll in free courses and books.
+4. Access course content, including videos from YouTube.
+5. Follow your personalized roadmap to stay aligned with your academic goals.
+6. Request additional books or courses if needed.
+7. Participate in group chats for your grade year and engage with the community by reading articles, chatting with friends, and posting updates.
 
 ## Screenshots
 ### Splash
@@ -89,8 +145,26 @@ Firebase-Database
 ![Screenshot_2024-06-25-13-20-21-63_f2fcff044fb34f3b490345964cc23d91](https://github.com/Abdelrahman-Kamel8886/Uni-Home/assets/126878089/8904d3a9-0ecf-4338-9e6f-95bb3eddd9d6)
 ![Screenshot_2024-06-25-13-20-24-25_f2fcff044fb34f3b490345964cc23d91](https://github.com/Abdelrahman-Kamel8886/Uni-Home/assets/126878089/73a42c5c-5ff3-4287-bbeb-60b8dece23d5)
 
-## Author
-Abdelrahman Kamel
+## UI/UX Designed By
+- ### Mahmoud Sabry
+   - **Figma Link: [UNI-HOME Design](https://www.figma.com/design/bT1ZXQfCzC8n1eK4GL5hUa/uni-home)**
+
+## Contributing
+Contributions are welcome! If you would like to contribute to the development of the Uni-Home app, please follow these guidelines:
+
+1. **Fork the repository.**
+2. **Create a new branch for your feature or bug fix.**
+3. **Commit your changes with descriptive messages.**
+4. **Push your branch to your forked repository.**
+5. **Submit a pull request with a clear description of the changes.**
+
+
+## Contact
+For any questions or inquiries, please contact:
+- ### Abdelrahman Kamel
+  - **LinkedIn: [LinkedIn Profile](www.linkedin.com/in/abdelrahman-kamel-7a7457200)**
+  - **Email: abdelrahmankamel8886@gmail.com**
+
 
 
 
